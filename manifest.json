@@ -8,9 +8,5 @@
  "url": "https://raw.githubusercontent.com/Rverbeke/-Farmware-Tests/master/manifest.json",
  "zip": "https://github.com/Rverbeke/-Farmware-Tests/archive/master.zip",
  "executable": "python",
- "args": ["-Farmware-Tests-master/test.py"],
- "config": [
-   {"name": "X", "label": "X (mm)", "value": 10 },
-   {"name": "Y", "label": "Y (mm)", "value": 10 }
- ]
+ "args": ["-Farmware-Tests-master/test.py"]
 }
