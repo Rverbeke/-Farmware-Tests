@@ -5,8 +5,8 @@
  "description": "A simple Farmware example that tells FarmBot to log a new message.",
  "version": "1.0.0",
  "min_os_version_major": 6,
- "url": "https://raw.githubusercontent.com/Rverbeke/-Farmware-Tests/master/manifest.json",
- "zip": "https://github.com/Rverbeke/-Farmware-Tests/archive/master.zip",
+ "url": "https://raw.githubusercontent.com/Rverbeke/farmware-test/master/manifest.json",
+ "zip": "https://github.com/Rverbeke/farmware-test/archive/master.zip",
  "executable": "python",
- "args": ["-Farmware-Tests-master/test.py"]
+ "args": ["farmware-test-master/test.py"]
 }
