@@ -1,0 +1,17 @@
+    
+{
+ "package": "Tests",
+ "language": "python",
+ "author": "Remy Verbeke",
+ "description": "Various tests",
+ "version": "1.0.0",
+ "min_os_version_major": 6,
+ "url": "https://raw.githubusercontent.com/Rverbeke/-Farmware-Tests/master/manifest.json",
+ "zip": "https://github.com/Rverbeke/-Farmware-Tests/archive/master.zip",
+ "executable": "python",
+ "args": ["-Farmware-Circle-master/tests.py"]
+ "config": [
+   {"name": "X direction", "label": "X direction (cm)", "value": 1 },
+   {"name": "Y direction", "label": "Y direction (cm)", "value": 1 },
+ ]
+}
