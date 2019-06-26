@@ -10,7 +10,7 @@
  "executable": "python",
  "args": ["-Farmware-Tests-master/test.py"],
  "config": [
-   {"name": "servo_angle", "label": "Servo Angle (0-180)", "value": 0 },
-   {"name": "pin_number", "label": "Pin Number (4, 5, 6, or 11)", "value": 4 }
+   {"name": "X", "label": "X (mm)", "value": 10 },
+   {"name": "Y", "label": "Y (mm)", "value": 10 }
  ]
 }
