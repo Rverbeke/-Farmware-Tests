@@ -8,7 +8,8 @@ X = get_config_value(farmware_name, config_name='X')
 device.log("X coordinate recieved", message_type="success")
 Y = get_config_value(farmware_name, config_name='Y')
 device.log("Y coordinate recieved", message_type="success")
-
+"""
 device.log("attempting to move to inputed coordinates", message_type="info")
 device.move_relative(X, Y, 0, 100)
 device.log("Movement successful", message_type="success")
+"""
