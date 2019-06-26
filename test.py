@@ -24,8 +24,8 @@ farmbot_Y_coord = device.get_current_position('y')
 #Move the Farmbot with the calculated coordinates
 for angle in range(0, 361, int(360/points)):
 	next_X = farmbot_X_coord + radius*np.cos(np.array(angle*np.pi/180))
-  next_Y = farmbot_Y_coord + radius*np.sin(np.array(angle*np.pi/180))
-  device.move_relative(next_X, next_Y, 0, 100)
+	next_Y = farmbot_Y_coord + radius*np.sin(np.array(angle*np.pi/180))
+	device.move_relative(next_X, next_Y, 0, 100)
 
 
 
