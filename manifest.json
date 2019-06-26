@@ -1,5 +1,5 @@
 {
- "package": "Hello Farmware",
+ "package": "Hello Farmware V2",
  "language": "python",
  "author": "FarmBot, Inc.",
  "description": "A simple Farmware example that tells FarmBot to log a new message.",
