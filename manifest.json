@@ -1,8 +1,8 @@
 {
- "package": "Test",
+ "package": "Hello Farmware",
  "language": "python",
- "author": "Rverbeke",
- "description": "Test farmware",
+ "author": "FarmBot, Inc.",
+ "description": "A simple Farmware example that tells FarmBot to log a new message.",
  "version": "1.0.0",
  "min_os_version_major": 6,
  "url": "https://raw.githubusercontent.com/Rverbeke/-Farmware-Tests/master/manifest.json",
