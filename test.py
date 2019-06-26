@@ -1,6 +1,7 @@
+from farmware_tools import device, get_config_value
+
 device.log("Begin Farmware tests", message_type="success")
 
-from farmware_tools import device, get_config_value
 farmware_name = 'Tests'
 
 device.log("Fetching coordinates", message_type="info")
