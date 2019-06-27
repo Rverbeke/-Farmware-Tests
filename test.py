@@ -11,7 +11,7 @@ import numpy as np
 farmware_name = 'Circle'
 
 #Fetch the parameters from the webapp
-diameter = get_config_value(farmware_name, config_name='Radius')
+diameter = get_config_value(farmware_name, config_name='Diameter')
 points = get_config_value(farmware_name, config_name='Points')
 
 #Get the current position, used as the center of the circle
