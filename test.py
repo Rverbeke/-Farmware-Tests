@@ -8,29 +8,32 @@ Tells the farmbot to make a circle
 from farmware_tools import device, get_config_value
 import numpy as np
 
-farmware_name = 'test'
+farmware_name = 'Circle'
 
 #Fetch the parameters from the webapp
-radius = get_config_value(farmware_name, config_name='Radius')
+diameter = get_config_value(farmware_name, config_name='Radius')
 points = get_config_value(farmware_name, config_name='Points')
-
-#Check if the number of points is valid
-assert(360%points == 0), "Number of points must be a divisor of 360"
 
 #Get the current position, used as the center of the circle
 farmbot_X_coord = device.get_current_position('x')
 farmbot_Y_coord = device.get_current_position('y')
 
-#Move the Farmbot with the calculated coordinates
-for angle in range(0, 361, int(360/points)):
-	next_X = farmbot_X_coord + radius*np.cos(np.array(angle*np.pi/180))
-	next_Y = farmbot_Y_coord + radius*np.sin(np.array(angle*np.pi/180))
-	device.move_relative(next_X, next_Y, 0, 100)
+#Length of the polygon's sides
+length = diameter * np.sin(np.array(np.pi/points))
 
+#Angle for each side relative to X axis
+angles = [0]
+i = 1
+while(i<=points):
+	angles.append(angles[i-1] + 2*np.pi/points)
+	i+=1
 
-
-
-
+#Move the farmbot to new coordinates
+for angle in angles:
+	next_X = farmbot_X_coord + length * np.cos(np.array(angle))
+	next_Y = farmbot_Y_coord + length * np.sin(np.array(angle))
+	device.move_absolute(device.assemble_coordinate(next_X, next_Y, 0), 100, device.assemble_coordinate(0, 0, 0))
+device.move_absolute(device.assemble_coordinate(farmbot_X_coord, farmbot_Y_coord, 0), 100, device.assemble_coordinate(0, 0, 0))
 
 """
 #Linear movement (change X and Y in manifest.json)
