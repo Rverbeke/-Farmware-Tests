@@ -11,7 +11,7 @@ import numpy as np
 farmware_name = 'test'
 
 #Fetch the parameters from the webapp
-radius = get_config_value(famware_name, config_name='Radius')
+radius = get_config_value(farmware_name, config_name='Radius')
 points = get_config_value(farmware_name, config_name='Points')
 
 #Check if the number of points is valid
