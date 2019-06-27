@@ -11,6 +11,6 @@
  "args": ["farmware-test-master/test.py"],
  "config": [
    {"name": "Diameter", "label": "Diameter (mm)", "value": 100 },
-   {"name": "Points", "label": "Points (must be a divisor of 360)", "value": 8 }
+   {"name": "Points", "label": "Number of points in the circle", "value": 8 }
  ]
 }
